@@ -12,18 +12,18 @@ downloads = './downloads/{}/'
 #Button
 START_BUTTONS=[
     [
-        InlineKeyboardButton('Source', url='https://github.com/X-Gorn/TikTokDL'),
-        InlineKeyboardButton('Project Channel', url='https://t.me/xTeamBots'),
+        InlineKeyboardButton('المطور₁ 👨‍💻', url='https://t.me/l_IIIIIIl'),
+        InlineKeyboardButton('المطور₂ 🕵️‍♂️', url='https://t.me/PPPPHPPPPP'),
     ],
-    [InlineKeyboardButton('Author', url='https://t.me/xgorn')],
+    
 ]
 
 DL_BUTTONS=[
     [
-        InlineKeyboardButton('No Watermark', callback_data='nowm'),
-        InlineKeyboardButton('Watermark', callback_data='wm'),
+        InlineKeyboardButton('بـدون علامـة مائية', callback_data='nowm'),
+        InlineKeyboardButton('بـعلامة مائيـة', callback_data='wm'),
     ],
-    [InlineKeyboardButton('Audio', callback_data='audio')],
+    [InlineKeyboardButton('فقط الصوت', callback_data='audio')],
 ]
 
 
