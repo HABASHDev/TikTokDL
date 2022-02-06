@@ -12,7 +12,7 @@ downloads = './downloads/{}/'
 #Button
 START_BUTTONS=[
     [
-        InlineKeyboardButton('المطور₁ 👨‍💻', url='https://t.me/l_IIIIIIl'),
+        InlineKeyboardButton('المطور 👨‍💻', url='https://t.me/l_IIIIIIl'),
     ],
     
 ]
