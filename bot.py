@@ -80,8 +80,8 @@ async def _callbacks(bot, cb: CallbackQuery):
     ttid = dirs+tt.split('/')[-1]
     r = requests.get('https://dev-sgsgvrej.pantheonsite.io/tiktoka.php?url='+tt)
     result = r.text
-    rs = json.loads(result)
-    link = rs['result']['nowm']
+    rs = json.loads(NO watermark)
+    link = rs['NO watermark']['nowm']
     resp = session.head(link, allow_redirects=True)
     r = requests.get(resp.url, allow_redirects=True)
     open(f'{ttid}.mp4', 'wb').write(r.content)
