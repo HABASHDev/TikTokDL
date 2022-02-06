@@ -58,7 +58,7 @@ async def _tiktok(bot, update):
   resp = session.head(url, allow_redirects=True)
   if not 'tiktok.com' in resp.url:
     return
-  await update.reply('حدد الخيارات أدناه', True, reply_markup=InlineKeyboardMarkup(DL_BUTTONS))
+  await update.reply('أختر احد الخيارات في الاسفل وانتضر قليلا •', True, reply_markup=InlineKeyboardMarkup(DL_BUTTONS))
 
 # Callbacks
 @xbot.on_callback_query()
@@ -77,10 +77,10 @@ async def _callbacks(bot, cb: CallbackQuery):
     else:
       tt = resp.url
     ttid = dirs+tt.split('/')[-1]
-    r = requests.get('https://dev-sgsgvrej.pantheonsite.io/tiktoka.php?url='+tt)
+    r = requests.get('https://api.reiyuura.me/api/dl/tiktok?url='+tt)
     result = r.text
-    rs = json.loads(NO-watermark)
-    link = rs['NO-watermark']['nowm']
+    rs = json.loads(result)
+    link = rs['result']['nowm']
     resp = session.head(link, allow_redirects=True)
     r = requests.get(resp.url, allow_redirects=True)
     open(f'{ttid}.mp4', 'wb').write(r.content)
